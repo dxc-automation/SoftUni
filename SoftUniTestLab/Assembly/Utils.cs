@@ -3,11 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AutomationTestLab
+namespace SoftUniTestLab
 {
-    public class Utils
+    public class Utils 
     {
-        private ConfigurationRoot config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
 
         /* Returns configuration builder */
