@@ -7,7 +7,6 @@ namespace AutomationTestLab
 {
     public class Utils
     {
-        readonly IConfigurationRoot config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
         
         
         /* Returns configuration builder */

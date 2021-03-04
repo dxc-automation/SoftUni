@@ -1,0 +1,5 @@
+E:\SoftUni\SoftUni\SoftUniTestLab\obj\Debug\netcoreapp3.1\SoftUniTestLab.AssemblyInfoInputs.cache
+E:\SoftUni\SoftUni\SoftUniTestLab\obj\Debug\netcoreapp3.1\SoftUniTestLab.AssemblyInfo.cs
+E:\SoftUni\SoftUni\SoftUniTestLab\obj\Debug\netcoreapp3.1\SoftUniTestLab.csproj.CoreCompileInputs.cache
+E:\SoftUni\SoftUni\SoftUniTestLab\obj\Debug\netcoreapp3.1\SoftUniTestLab.csprojAssemblyReference.cache
+E:\SoftUni\SoftUni\SoftUniTestLab\obj\Debug\netcoreapp3.1\SoftUniTestLab.GeneratedMSBuildEditorConfig.editorconfig
