@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SoftUniTestLab
 {
-    public class Utils 
+    class Utils 
     {
 
 

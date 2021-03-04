@@ -1,0 +1,65 @@
+{
+  "uid" : "6f4a65a59202f2c5",
+  "name" : "TestOpen",
+  "fullName" : "AutomationTestLab.Test.TestOpen",
+  "historyId" : "AutomationTestLab.Test.TestOpen",
+  "time" : {
+    "start" : 1614804261846,
+    "stop" : 1614804261864,
+    "duration" : 18
+  },
+  "status" : "failed",
+  "statusMessage" : "System.NullReferenceException : Object reference not set to an instance of an object.",
+  "statusTrace" : "   at AutomationTestLab.HomePage.OpenHomePage() in E:\\SoftUni\\SoftUniProject\\AutomationTestLab\\Pages\\HomePage.cs:line 37\r\n   at AutomationTestLab.Test.TestOpen() in E:\\SoftUni\\SoftUniProject\\AutomationTestLab\\Tests\\Test.cs:line 20",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "testClass",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "package",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "427fd619a0fd55b6",
+      "status" : "failed",
+      "statusDetails" : "System.ArgumentException : The SearchContext of the locator object cannot be null (Parameter 'locator')",
+      "time" : {
+        "start" : 1614801992176,
+        "stop" : 1614801992308,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "99275d8b0100922d",
+      "status" : "failed",
+      "statusDetails" : "OneTimeSetUp: System.InvalidOperationException : Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line (SessionNotCreated)",
+      "time" : {
+        "start" : 1614801860722,
+        "stop" : 1614801865018,
+        "duration" : 4296
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6f4a65a59202f2c5.json",
+  "parameterValues" : [ ]
+}

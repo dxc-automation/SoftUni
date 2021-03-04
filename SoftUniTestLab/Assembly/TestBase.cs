@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualBasic.CompilerServices;
+using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace AutomationTestLab
@@ -9,7 +10,7 @@ namespace AutomationTestLab
         public static IWebDriver driver;
 
         public Assertions assertions = new Assertions();
-        public Utils utils = new Utils();
+        public Utils utils;
 
 
         /* Initialize browser and set browser options */
@@ -18,6 +19,8 @@ namespace AutomationTestLab
         {
            driver = BrowserInit();
         }
+
+   
 
 
 

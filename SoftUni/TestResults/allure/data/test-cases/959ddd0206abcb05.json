@@ -1,0 +1,67 @@
+{
+  "uid" : "959ddd0206abcb05",
+  "name" : "OpenHomePage",
+  "fullName" : "AutomationTestLab.Test.OpenHomePage",
+  "historyId" : "AutomationTestLab.Test.OpenHomePage",
+  "time" : {
+    "start" : 1614815535743,
+    "stop" : 1614815540895,
+    "duration" : 5152
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "testClass",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "package",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6b031b22eb43f995",
+      "status" : "failed",
+      "statusDetails" : "System.ArgumentNullException : Argument 'url' cannot be null. (Parameter 'value')",
+      "time" : {
+        "start" : 1614815459693,
+        "stop" : 1614815459711,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "806f882ee757cd3c",
+      "status" : "failed",
+      "statusDetails" : "System.ArgumentNullException : Argument 'url' cannot be null. (Parameter 'value')",
+      "time" : {
+        "start" : 1614815319869,
+        "stop" : 1614815319886,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "ad6ab4c38122f1f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614812550110,
+        "stop" : 1614812555437,
+        "duration" : 5327
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "959ddd0206abcb05.json",
+  "parameterValues" : [ ]
+}

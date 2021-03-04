@@ -9,7 +9,7 @@ using System.Text;
 
 namespace AutomationTestLab
 {
-    public class WebDriverInit : Utils
+    public class WebDriverInit 
     {
         private IWebDriver driver;
         private string baseURL;

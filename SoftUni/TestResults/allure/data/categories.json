@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "System.NullReferenceException : Object reference not set to an instance of an object.",
+      "children" : [ {
+        "name" : "TestOpen",
+        "uid" : "6f4a65a59202f2c5",
+        "parentUid" : "969bb051ff4dd943c290b90f862f14f0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614804261846,
+          "stop" : 1614804261864,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "969bb051ff4dd943c290b90f862f14f0"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
