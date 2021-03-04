@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AutomationTestLab</id>
+    <version>1.0.0</version>
+    <authors>AutomationTestLab</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="CloudinaryDotNet" version="1.14.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.PageObjects" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.PageObjects.Core" version="3.12.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="IppDotNetSdkForQuickBooksApiV3" version="14.6.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.NET.Test.Sdk" version="16.9.1" exclude="Build,Analyzers" />
+        <dependency id="NUnit" version="3.13.1" exclude="Build,Analyzers" />
+        <dependency id="NUnit.ConsoleRunner" version="3.12.0" exclude="Build,Analyzers" />
+        <dependency id="NUnit3TestAdapter" version="3.17.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Chrome.WebDriver" version="85.0.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Firefox.WebDriver" version="0.27.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Support" version="3.141.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="3.141.0" exclude="Build,Analyzers" />
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp3.1/testhost.exe" buildAction="Content" />
+      <files include="any/netcoreapp3.1/testhost.dll" buildAction="Content" />
+      <files include="any/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="E:\SoftUni\SoftUniProject\AutomationTestLab\bin\Debug\netcoreapp3.1\AutomationTestLab.runtimeconfig.json" target="lib\netcoreapp3.1\AutomationTestLab.runtimeconfig.json" />
+    <file src="E:\SoftUni\SoftUniProject\AutomationTestLab\bin\Debug\netcoreapp3.1\AutomationTestLab.dll" target="lib\netcoreapp3.1\AutomationTestLab.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.9.1\build\netcoreapp2.1\x64\testhost.exe" target="content\testhost.exe" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.9.1\build\netcoreapp2.1\x64\testhost.exe" target="contentFiles\any\netcoreapp3.1\testhost.exe" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.9.1\build\netcoreapp2.1\x64\testhost.dll" target="content\testhost.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.9.1\build\netcoreapp2.1\x64\testhost.dll" target="contentFiles\any\netcoreapp3.1\testhost.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.9.1\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll" target="content\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.9.1\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll" target="contentFiles\any\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+  </files>
+</package>

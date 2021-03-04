@@ -1,0 +1,41 @@
+{
+  "AutomationTestLab.Test.OpenHomePage" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "959ddd0206abcb05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614815535743,
+        "stop" : 1614815540895,
+        "duration" : 5152
+      }
+    } ]
+  },
+  "AutomationTestLab.Test.TestOpen" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f4a65a59202f2c5",
+      "status" : "failed",
+      "statusDetails" : "System.NullReferenceException : Object reference not set to an instance of an object.",
+      "time" : {
+        "start" : 1614804261846,
+        "stop" : 1614804261864,
+        "duration" : 18
+      }
+    } ]
+  }
+}

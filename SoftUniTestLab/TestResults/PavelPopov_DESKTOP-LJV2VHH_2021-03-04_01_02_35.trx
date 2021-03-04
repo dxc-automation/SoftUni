@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e756fca5-609e-4598-87f4-291a424dbf80" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-04 01:02:35" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-03-04T01:02:35.5367311+02:00" queuing="2021-03-04T01:02:35.5367319+02:00" start="2021-03-04T01:02:19.4399275+02:00" finish="2021-03-04T01:02:35.5427611+02:00" />
+  <TestSettings name="default" id="bd4c6a66-b641-4ccf-b772-3a57fad20fcc">
+    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-04_01_02_35" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8b02171a-3399-4f05-b008-8ea20b6aefb5" testId="a099e8e9-3ad2-cefc-9185-a5d7b761c859" testName="OpenHomePage" computerName="DESKTOP-LJV2VHH" duration="00:00:05.3263730" startTime="2021-03-04T01:02:30.1106215+02:00" endTime="2021-03-04T01:02:35.4370115+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b02171a-3399-4f05-b008-8ea20b6aefb5" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="OpenHomePage" storage="e:\softuni\softuniproject\automationtestlab\bin\debug\netcoreapp3.1\automationtestlab.dll" id="a099e8e9-3ad2-cefc-9185-a5d7b761c859">
+      <Execution id="8b02171a-3399-4f05-b008-8ea20b6aefb5" />
+      <TestMethod codeBase="E:\SoftUni\SoftUniProject\AutomationTestLab\bin\Debug\netcoreapp3.1\AutomationTestLab.dll" adapterTypeName="executor://nunit3testexecutor/" className="AutomationTestLab.Test" name="OpenHomePage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a099e8e9-3ad2-cefc-9185-a5d7b761c859" executionId="8b02171a-3399-4f05-b008-8ea20b6aefb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.17.0.0: Test execution started&#xD;
+Running all tests in E:\SoftUni\SoftUniProject\AutomationTestLab\bin\Debug\netcoreapp3.1\AutomationTestLab.dll&#xD;
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases&#xD;
+NUnit Adapter 3.17.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-LJV2VHH" outcome="Warning" timestamp="2021-03-04T01:02:20.7156125+02:00">
+        <Text>Setup failed for test fixture AutomationTestLab.HomePage</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-LJV2VHH" outcome="Warning" timestamp="2021-03-04T01:02:20.7163206+02:00">
+        <Text>No suitable constructor was found</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,40 @@
+{
+  "uid" : "99275d8b0100922d",
+  "name" : "TestOpen",
+  "fullName" : "AutomationTestLab.Test.TestOpen",
+  "historyId" : "AutomationTestLab.Test.TestOpen",
+  "time" : {
+    "start" : 1614801860722,
+    "stop" : 1614801865018,
+    "duration" : 4296
+  },
+  "status" : "failed",
+  "statusMessage" : "OneTimeSetUp: System.InvalidOperationException : Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line (SessionNotCreated)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "testClass",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "package",
+    "value" : "AutomationTestLab.Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "99275d8b0100922d.json",
+  "parameterValues" : [ ]
+}

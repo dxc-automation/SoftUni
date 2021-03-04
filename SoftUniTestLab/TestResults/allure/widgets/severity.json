@@ -1,0 +1,21 @@
+[ {
+  "uid" : "959ddd0206abcb05",
+  "name" : "OpenHomePage",
+  "time" : {
+    "start" : 1614815535743,
+    "stop" : 1614815540895,
+    "duration" : 5152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f4a65a59202f2c5",
+  "name" : "TestOpen",
+  "time" : {
+    "start" : 1614804261846,
+    "stop" : 1614804261864,
+    "duration" : 18
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
