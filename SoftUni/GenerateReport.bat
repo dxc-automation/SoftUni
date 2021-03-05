@@ -1,1 +1,1 @@
-allure generate E:\SoftUni\SoftUniProject\AutomationTestLab\TestResults -o E:\SoftUni\SoftUniProject\AutomationTestLab\TestResults\allure --clean
+allure generate E:\SoftUni\SoftUni\SoftUni\TestResults -o E:\SoftUni\SoftUni\SoftUni\TestResults\allure --clean

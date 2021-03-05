@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1592c656-6e42-4cfb-93bc-e47fb57f56fd" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-05 01:26:46" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-03-05T01:26:46.0494371+02:00" queuing="2021-03-05T01:26:46.0494380+02:00" start="2021-03-05T01:26:44.9127918+02:00" finish="2021-03-05T01:26:46.0554595+02:00" />
+  <TestSettings name="default" id="a401fbc8-fc4e-4faf-a015-5ed485dbc5b9">
+    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-05_01_26_46" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="7f2cdee4-4cc5-47b1-a3c0-701721ed2a2d" testId="5fe384e7-27d7-3ad7-8e11-d30712949649" testName="OpenHomePage" computerName="DESKTOP-LJV2VHH" duration="00:00:00.1604750" startTime="2021-03-05T01:26:45.7589313+02:00" endTime="2021-03-05T01:26:45.9194033+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f2cdee4-4cc5-47b1-a3c0-701721ed2a2d">
+      <Output>
+        <ErrorInfo>
+          <Message>OneTimeSetUp: OpenQA.Selenium.DriverServiceNotFoundException : The chromedriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="OpenHomePage" storage="e:\softuni\softuni\softuni\bin\debug\netcoreapp3.1\softuni.dll" id="5fe384e7-27d7-3ad7-8e11-d30712949649">
+      <Execution id="7f2cdee4-4cc5-47b1-a3c0-701721ed2a2d" />
+      <TestMethod codeBase="E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll" adapterTypeName="executor://nunit3testexecutor/" className="SoftUni.Test" name="OpenHomePage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5fe384e7-27d7-3ad7-8e11-d30712949649" executionId="7f2cdee4-4cc5-47b1-a3c0-701721ed2a2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.17.0.0: Test execution started&#xD;
+Running all tests in E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll&#xD;
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases&#xD;
+NUnit Adapter 3.17.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-LJV2VHH" outcome="Warning" timestamp="2021-03-05T01:26:45.7599764+02:00">
+        <Text>Setup failed for test fixture SoftUni.HomePage</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-LJV2VHH" outcome="Warning" timestamp="2021-03-05T01:26:45.7608567+02:00">
+        <Text>No suitable constructor was found</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-LJV2VHH" outcome="Warning" timestamp="2021-03-05T01:26:45.9336236+02:00">
+        <Text>TearDown failed for test fixture SoftUni.Test</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-LJV2VHH" outcome="Warning" timestamp="2021-03-05T01:26:45.9341102+02:00">
+        <Text>OpenQA.Selenium.DriverServiceNotFoundException : The chromedriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html.&#xD;
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

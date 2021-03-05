@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "System.NullReferenceException : Object reference not set to an instance of an object.",
+      "name" : "OneTimeSetUp: System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 84 (SessionNotCreated)",
       "children" : [ {
-        "name" : "TestOpen",
-        "uid" : "6f4a65a59202f2c5",
-        "parentUid" : "969bb051ff4dd943c290b90f862f14f0",
+        "name" : "OpenHomePage",
+        "uid" : "9eb92a2a4c88ed7",
+        "parentUid" : "41647b71d1eca8a67d6e63d469ccef52",
         "status" : "failed",
         "time" : {
-          "start" : 1614804261846,
-          "stop" : 1614804261864,
-          "duration" : 18
+          "start" : 1614901129062,
+          "stop" : 1614901129777,
+          "duration" : 715
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "969bb051ff4dd943c290b90f862f14f0"
+      "uid" : "41647b71d1eca8a67d6e63d469ccef52"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

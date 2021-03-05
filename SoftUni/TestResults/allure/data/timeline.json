@@ -2,92 +2,53 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "TestOpen",
-    "uid" : "99275d8b0100922d",
+    "name" : "OpenHomePage",
+    "uid" : "a53e378f761bf5f1",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "failed",
     "time" : {
-      "start" : 1614801860722,
-      "stop" : 1614801865018,
-      "duration" : 4296
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "TestOpen",
-    "uid" : "427fd619a0fd55b6",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "failed",
-    "time" : {
-      "start" : 1614801992176,
-      "stop" : 1614801992308,
-      "duration" : 132
+      "start" : 1614900719929,
+      "stop" : 1614900720929,
+      "duration" : 1000
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "OpenHomePage",
-    "uid" : "ad6ab4c38122f1f6",
+    "uid" : "9eb92a2a4c88ed7",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
+    "status" : "failed",
     "time" : {
-      "start" : 1614812550110,
-      "stop" : 1614812555437,
-      "duration" : 5327
+      "start" : 1614901129062,
+      "stop" : 1614901129777,
+      "duration" : 715
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "OpenHomePage",
-    "uid" : "806f882ee757cd3c",
+    "uid" : "dd4738808ab2b57d",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "failed",
     "time" : {
-      "start" : 1614815319869,
-      "stop" : 1614815319886,
-      "duration" : 17
+      "start" : 1614900498769,
+      "stop" : 1614900498914,
+      "duration" : 145
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "OpenHomePage",
-    "uid" : "6b031b22eb43f995",
+    "uid" : "dd8d071bce47241f",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "failed",
     "time" : {
-      "start" : 1614815459693,
-      "stop" : 1614815459711,
-      "duration" : 18
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "TestOpen",
-    "uid" : "6f4a65a59202f2c5",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "failed",
-    "time" : {
-      "start" : 1614804261846,
-      "stop" : 1614804261864,
-      "duration" : 18
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "OpenHomePage",
-    "uid" : "959ddd0206abcb05",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1614815535743,
-      "stop" : 1614815540895,
-      "duration" : 5152
+      "start" : 1614900405758,
+      "stop" : 1614900405919,
+      "duration" : 161
     },
     "flaky" : false,
     "newFailed" : false,

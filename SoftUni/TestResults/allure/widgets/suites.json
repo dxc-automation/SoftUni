@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "84fe1f99d6aabd2ff8e3952979d32930",
-    "name" : "AutomationTestLab.Test",
+    "uid" : "2b26fb14607fc9ae1507cd2bdc7d4bd5",
+    "name" : "SoftUni.Test",
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     }
   } ]
 }

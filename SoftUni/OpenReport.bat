@@ -1,2 +1,2 @@
-allure open E:\SoftUni\SoftUniProject\AutomationTestLab\TestResults\allure
+allure open E:\SoftUni\SoftUni\SoftUni\TestResults\allure
 pause

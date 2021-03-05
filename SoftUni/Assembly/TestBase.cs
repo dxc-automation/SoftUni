@@ -9,33 +9,29 @@ namespace SoftUni
     public abstract class TestBase
     {
         public static IWebDriver driver;
-        private string baseURL;
-        private string browser;
         public Assertions assertions = new Assertions();
         public Utils utils = new Utils();
 
 
         public IWebDriver BrowserInit()
         {
-            browser = utils.GetBrowser();
+            var chromePath = utils.GetProjectPath() + "/Resources";
+            var browser = utils.GetBrowser();
             switch (browser)
             {
-                case "Chrome":
-                    ChromeOptions options = new ChromeOptions();
-                    options.AddArgument("start-maximized");
-                    driver = new ChromeDriver(options);
+                case "Chrome":            
+                    driver = new ChromeDriver(chromePath);
                     break;
 
                 case "Firefox":
                     driver = new FirefoxDriver();
-                    driver.Manage().Window.Maximize();
                     break;
 
                 default:
                     driver = new FirefoxDriver();
-                    driver.Manage().Window.Maximize();
                     break;
             }
+            driver.Manage().Window.Maximize();
             return driver;
         }
 
@@ -44,7 +40,6 @@ namespace SoftUni
         [OneTimeSetUp]
         public void Init()
         {
-
            driver = BrowserInit();
         }
 

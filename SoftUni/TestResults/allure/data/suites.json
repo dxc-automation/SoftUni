@@ -2,34 +2,21 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "AutomationTestLab.Test",
+    "name" : "SoftUni.Test",
     "children" : [ {
-      "name" : "TestOpen",
-      "uid" : "6f4a65a59202f2c5",
-      "parentUid" : "84fe1f99d6aabd2ff8e3952979d32930",
+      "name" : "OpenHomePage",
+      "uid" : "9eb92a2a4c88ed7",
+      "parentUid" : "2b26fb14607fc9ae1507cd2bdc7d4bd5",
       "status" : "failed",
       "time" : {
-        "start" : 1614804261846,
-        "stop" : 1614804261864,
-        "duration" : 18
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "OpenHomePage",
-      "uid" : "959ddd0206abcb05",
-      "parentUid" : "84fe1f99d6aabd2ff8e3952979d32930",
-      "status" : "passed",
-      "time" : {
-        "start" : 1614815535743,
-        "stop" : 1614815540895,
-        "duration" : 5152
+        "start" : 1614901129062,
+        "stop" : 1614901129777,
+        "duration" : 715
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "84fe1f99d6aabd2ff8e3952979d32930"
+    "uid" : "2b26fb14607fc9ae1507cd2bdc7d4bd5"
   } ]
 }
