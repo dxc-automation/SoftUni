@@ -5,21 +5,55 @@ using OpenQA.Selenium.Firefox;
 
 namespace SoftUni
 {
-    [TestFixture]
+    
     public abstract class TestBase
     {
         public static IWebDriver driver;
+        public static Utils utils = new Utils();
         public Assertions assertions = new Assertions();
-        public Utils utils = new Utils();
+        public static ExtentLogger logger   = new ExtentLogger();
+
+        public string testName;
+        public string testDescription;
+
+
+        /* Initialize browser and set browser options */
+        [OneTimeSetUp]
+        public void Init()
+        {
+           driver = BrowserInit();
+        }
+
+
+        [SetUp]
+        public void InitLogger()
+        {
+        }
+
+
+        [TearDown]
+        public void TearDownLogger()
+        {
+        }
+
+
+        /* Close browser application */
+        [OneTimeTearDown]
+        public void TearDown()
+        {
+            driver.Dispose();
+            driver.Quit();
+        }
+
 
 
         public IWebDriver BrowserInit()
         {
-            var chromePath = utils.GetProjectPath() + "/Resources";
+            var chromePath = utils.GetProjectPath() + "\\Resources";
             var browser = utils.GetBrowser();
             switch (browser)
             {
-                case "Chrome":            
+                case "Chrome":
                     driver = new ChromeDriver(chromePath);
                     break;
 
@@ -33,25 +67,6 @@ namespace SoftUni
             }
             driver.Manage().Window.Maximize();
             return driver;
-        }
-
-
-        /* Initialize browser and set browser options */
-        [OneTimeSetUp]
-        public void Init()
-        {
-           driver = BrowserInit();
-        }
-
-   
-
-
-        /* Close browser application */
-        [OneTimeTearDown]
-        public void TearDown()
-        {
-            driver.Dispose();
-            driver.Quit();
         }
     }
 }

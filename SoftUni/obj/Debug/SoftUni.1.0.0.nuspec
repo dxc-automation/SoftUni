@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SoftUni</id>
+    <version>1.0.0</version>
+    <authors>SoftUni</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="CloudinaryDotNet" version="1.14.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.PageObjects" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.PageObjects.Core" version="3.12.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="ExtentReports" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="MSTest.TestAdapter" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="MSTest.TestFramework" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="3.1.10" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.NET.Test.Sdk" version="16.5.0" exclude="Build,Analyzers" />
+        <dependency id="NUnit" version="3.13.1" exclude="Build,Analyzers" />
+        <dependency id="NUnit.ConsoleRunner" version="3.12.0" exclude="Build,Analyzers" />
+        <dependency id="NUnit3TestAdapter" version="3.17.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Chrome.WebDriver" version="85.0.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Firefox.WebDriver" version="0.27.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Support" version="3.141.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="3.141.0" exclude="Build,Analyzers" />
+        <dependency id="coverlet.collector" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" buildAction="Content" />
+      <files include="any/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" buildAction="Content" />
+      <files include="any/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" buildAction="Content" />
+      <files include="any/netcoreapp3.1/testhost.exe" buildAction="Content" />
+      <files include="any/netcoreapp3.1/testhost.dll" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.runtimeconfig.json" target="lib\netcoreapp3.1\SoftUni.runtimeconfig.json" />
+    <file src="E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll" target="lib\netcoreapp3.1\SoftUni.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\mstest.testadapter\2.1.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" target="content\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\mstest.testadapter\2.1.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" target="contentFiles\any\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\mstest.testadapter\2.1.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" target="content\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\mstest.testadapter\2.1.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" target="contentFiles\any\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\mstest.testadapter\2.1.0\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" target="content\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\mstest.testadapter\2.1.0\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" target="contentFiles\any\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" target="content\testhost.exe" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" target="contentFiles\any\netcoreapp3.1\testhost.exe" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" target="content\testhost.dll" />
+    <file src="C:\Users\PavelPopov\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" target="contentFiles\any\netcoreapp3.1\testhost.dll" />
+  </files>
+</package>

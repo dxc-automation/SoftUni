@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[2.1.0, )"
@@ -88,10 +92,6 @@
             "NUnit": {
               "target": "Package",
               "version": "[3.13.1, )"
-            },
-            "NUnit.Allure": {
-              "target": "Package",
-              "version": "[1.0.12, )"
             },
             "NUnit.ConsoleRunner": {
               "target": "Package",
