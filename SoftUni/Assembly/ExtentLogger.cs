@@ -11,14 +11,13 @@ namespace SoftUni
 {
     public class ExtentLogger : TestBase
     {
-        public  ExtentReports extent;
-        public  ExtentTest test;
+        public ExtentReports extent;
+        public ExtentTest test;
 
 
 
         public void CreateTest(string testName, string testDescription)
         {
-
             ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(utils.GetProjectPath() + "\\Report\\TestReport.html");
             htmlReporter.LoadConfig(utils.GetProjectPath() + "\\Resources\\logger-config.xml");
             extent = new ExtentReports();
@@ -71,7 +70,6 @@ namespace SoftUni
                     test.Pass("<pre>"
                                + "<br/>"
                                + "<center><b>* * * * * * * *    " + testName + "    * * * * * * * *</b></center>"
-                               + "<br/>"
                                + "<br/>" + testDescription
                                + "<br/>"
                                + "</pre>");

@@ -3,18 +3,18 @@
 namespace SoftUni
 {
     [TestFixture]
-    public class Test : TestBase
+    public class Login : TestBase
     {
         private HomePage homePage;
 
 
 
-        [Test, Description("Tese_01 Open Amazon Home Page")]
+        [Test]
         public void OpenHomePage()
         {
             testName = "Test Name";
             testDescription = "Test Description";
-            logger.CreateTest(testName, testDescription);
+ //           logger.CreateTest(testName, testDescription);
 
             homePage = new HomePage(driver);
 
@@ -23,7 +23,7 @@ namespace SoftUni
 
             homePage.Login();
 
-            logger.EndTest(testName, testDescription);
+    //        logger.EndTest(testName, testDescription);
 
         }
     }
