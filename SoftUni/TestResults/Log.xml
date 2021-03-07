@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="a5802454-88fd-430e-bd0b-10feca7b52fd" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-07 17:19:35" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2021-03-07T17:19:35.2060317+02:00" queuing="2021-03-07T17:19:35.2060330+02:00" start="2021-03-07T17:19:08.2957085+02:00" finish="2021-03-07T17:19:42.5599468+02:00" />
-  <TestSettings name="default" id="19936dfc-06ad-4998-9859-36be5df1ee8e">
-    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-07_17_19_35" />
+<TestRun id="4f671852-34f3-4ae1-88ad-17cc1b12e6d7" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-07 18:17:36" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-03-07T18:17:36.0299761+02:00" queuing="2021-03-07T18:17:36.0299768+02:00" start="2021-03-07T18:17:08.4195234+02:00" finish="2021-03-07T18:17:41.9539016+02:00" />
+  <TestSettings name="default" id="960a270b-f94c-42b9-8342-2e4f206df346">
+    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-07_18_17_36" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="9f4a378a-74fe-452e-b662-52770c236560" testId="557472c0-c20a-55eb-23e0-da316843a1da" testName="OpenHomePage" computerName="DESKTOP-LJV2VHH" duration="00:00:14.6359840" startTime="2021-03-07T17:19:20.0946786+02:00" endTime="2021-03-07T17:19:34.7304707+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f4a378a-74fe-452e-b662-52770c236560" />
+    <UnitTestResult executionId="66629971-5667-4978-8fa0-0b6b74e79b13" testId="557472c0-c20a-55eb-23e0-da316843a1da" testName="OpenHomePage" computerName="DESKTOP-LJV2VHH" duration="00:00:16.9804910" startTime="2021-03-07T18:17:17.9677168+02:00" endTime="2021-03-07T18:17:34.9480898+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66629971-5667-4978-8fa0-0b6b74e79b13" />
   </Results>
   <TestDefinitions>
     <UnitTest name="OpenHomePage" storage="e:\softuni\softuni\softuni\bin\debug\netcoreapp3.1\softuni.dll" id="557472c0-c20a-55eb-23e0-da316843a1da">
-      <Execution id="9f4a378a-74fe-452e-b662-52770c236560" />
+      <Execution id="66629971-5667-4978-8fa0-0b6b74e79b13" />
       <TestMethod codeBase="E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll" adapterTypeName="executor://nunit3testexecutor/" className="SoftUni.Login" name="OpenHomePage" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="557472c0-c20a-55eb-23e0-da316843a1da" executionId="9f4a378a-74fe-452e-b662-52770c236560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="557472c0-c20a-55eb-23e0-da316843a1da" executionId="66629971-5667-4978-8fa0-0b6b74e79b13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />

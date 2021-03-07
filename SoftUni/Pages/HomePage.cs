@@ -14,7 +14,7 @@ namespace SoftUni
         /* Page Elements */
         public string HomePageTitle = "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
 
-        private IWebElement headerSignInBtn => driver.FindElement(By.XPath("//div[@id='nav-flyout-abAccountLink']"));
+        private IWebElement headerSignInBtn => driver.FindElement(By.XPath("//header/div[@id='navbar']/div[@id='nav-flyout-anchor']/div[10]/div[2]/a[1]/span[1]"));
 
 
 

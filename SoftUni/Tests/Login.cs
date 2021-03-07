@@ -14,7 +14,7 @@ namespace SoftUni
         {
             testName = "Test Name";
             testDescription = "Test Description";
- //           logger.CreateTest(testName, testDescription);
+            logger.CreateTest(testName, testDescription);
 
             homePage = new HomePage(driver);
 
@@ -23,7 +23,7 @@ namespace SoftUni
 
             homePage.Login();
 
-    //        logger.EndTest(testName, testDescription);
+            logger.EndTest(testName, testDescription);
 
         }
     }

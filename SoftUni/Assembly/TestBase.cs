@@ -28,14 +28,12 @@ namespace SoftUni
         [SetUp]
         public void InitLogger()
         {
-            logger.CreateTest(testName, testDescription);
         }
 
 
         [TearDown]
         public void TearDownLogger()
         {
-            logger.EndTest(testName, testDescription);
         }
 
 
