@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-
+using SeleniumExtras.PageObjects;
 
 namespace SoftUni
 {
@@ -27,18 +27,23 @@ namespace SoftUni
 
 
         [Test]
-        public void OpenHomePage()
+        public void UserLogin()
         {
-            signInPage = new SignInPage(driver);
-            homePage = new HomePage(driver);
+            var signInPage = new SignInPage(driver);
+            PageFactory.InitElements(driver, signInPage);
+
+            var homePage = new HomePage(driver);
+            PageFactory.InitElements(driver, homePage);
            
 
             homePage.OpenHomePage();
             assertions.CheckPageTitle(driver.Title, homePage.HomePageTitle);
 
-            homePage.ClickSignInPopupBtn();
+            homePage.headerSignInBtn.Click();
+            assertions.CheckPageTitle(driver.Title, signInPage.SignInPageTitle);
 
-            signInPage.EnterUserEmail();
+            signInPage.inputEmail.SendKeys(utils.GetUserName());
+            signInPage.inputEmail.Submit();
         }
     }
 }

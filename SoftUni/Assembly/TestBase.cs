@@ -10,8 +10,8 @@ namespace SoftUni
     public class TestBase
     {
         public IWebDriver driver;
+        public WebDriverWait wait;
         public Utils utils = new Utils();
-        //      public static WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
 
         public static Assertions assertions = new Assertions();
         public static ExtentLogger logger = new ExtentLogger();

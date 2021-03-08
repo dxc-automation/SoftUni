@@ -6,9 +6,10 @@ using System.Text;
 
 namespace SoftUni
 {
-    public class SignInPage : TestBase
+    public class SignInPage
     {
         private IWebDriver driver;
+        Utils utils = new Utils();
 
         public SignInPage(IWebDriver driver)
         {
@@ -20,7 +21,8 @@ namespace SoftUni
         /*    Page Elements   */
         public string SignInPageTitle = "Amazon Sign-In";
 
-        private IWebElement inputEmail => driver.FindElement(By.XPath("//input[@id='ap_email']"));
+        [FindsBy(How = How.XPath, Using = "//input[@id='ap_email']")]
+        public IWebElement inputEmail;
 
 
 
