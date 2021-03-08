@@ -19,7 +19,7 @@ namespace SoftUni
 
         #region Pages
         public HomePage homePage;
-        public SignInPage signInPage;
+        public LoginPage loginPage;
         #endregion
 
 

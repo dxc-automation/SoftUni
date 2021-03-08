@@ -29,21 +29,17 @@ namespace SoftUni
         [Test]
         public void UserLogin()
         {
-            var signInPage = new SignInPage(driver);
-            PageFactory.InitElements(driver, signInPage);
+            var loginPage = new LoginPage(driver);
+            PageFactory.InitElements(driver, loginPage);
 
             var homePage = new HomePage(driver);
             PageFactory.InitElements(driver, homePage);
-           
 
-            homePage.OpenHomePage();
-            assertions.CheckPageTitle(driver.Title, homePage.HomePageTitle);
+            loginPage.OpenLoginPage();
+            assertions.CheckPageTitle(driver.Title, loginPage.LoginPageTitle);
 
-            homePage.headerSignInBtn.Click();
-            assertions.CheckPageTitle(driver.Title, signInPage.SignInPageTitle);
-
-            signInPage.inputEmail.SendKeys(utils.GetUserName());
-            signInPage.inputEmail.Submit();
+            loginPage.inputEmail.SendKeys(utils.GetUserName());
+            loginPage.inputEmail.Submit();
         }
     }
 }
