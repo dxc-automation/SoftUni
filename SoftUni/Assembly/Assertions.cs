@@ -8,13 +8,6 @@ namespace SoftUni
 {
     public class Assertions
     {
-        IWebDriver driver;
-
-        public Assertions()
-        {
-            driver = null;
-        }
-
 
         /* Check current web page title */
         public void CheckPageTitle(string actualPageTitle, string expectedPageTitle)

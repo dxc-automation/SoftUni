@@ -2,55 +2,51 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace SoftUni
 {
-    
-    public abstract class TestBase
+    public class TestBase
     {
-        public static IWebDriver driver;
-        public static Utils utils = new Utils();
-        public Assertions assertions = new Assertions();
-        public static ExtentLogger logger   = new ExtentLogger();
+        public IWebDriver driver;
+        public Utils utils = new Utils();
+        //      public static WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
 
-        public string testName;
-        public string testDescription;
+        public static Assertions assertions = new Assertions();
+        public static ExtentLogger logger = new ExtentLogger();
 
 
+        #region Pages
+        public HomePage homePage;
+        public SignInPage signInPage;
+        #endregion
+
+
+        #region Before & After Suite
         /* Initialize browser and set browser options */
         [OneTimeSetUp]
-        public void Init()
+        public void BeforeSuite()
         {
-           driver = BrowserInit();
+            LaunchBrowser();
         }
 
-
-        [SetUp]
-        public void InitLogger()
-        {
-        }
-
-
-        [TearDown]
-        public void TearDownLogger()
-        {
-        }
 
 
         /* Close browser application */
         [OneTimeTearDown]
-        public void TearDown()
+        public void AfterSuite()
         {
             driver.Dispose();
             driver.Quit();
         }
+        #endregion
 
-
-
-        public IWebDriver BrowserInit()
+        public void LaunchBrowser()
         {
-            var chromePath = utils.GetProjectPath() + "\\Resources";
+            var chromePath = utils.GetProjectPath() + "\\Resources\\chromedriver.exe";
             var browser = utils.GetBrowser();
+
             switch (browser)
             {
                 case "Chrome":
@@ -66,7 +62,6 @@ namespace SoftUni
                     break;
             }
             driver.Manage().Window.Maximize();
-            return driver;
         }
     }
 }

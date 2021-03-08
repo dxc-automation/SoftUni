@@ -174,3 +174,4 @@ E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\System.Security.Permissions.d
 E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\runtimes\win-x64\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
 E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\runtimes\win-x86\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
 E:\SoftUni\SoftUni\SoftUni\obj\Debug\netcoreapp3.1\SoftUni.csprojAssemblyReference.cache
+E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\RestSharp.dll

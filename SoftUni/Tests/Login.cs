@@ -1,30 +1,44 @@
-﻿using NUnit.Framework; 
+﻿using NUnit.Framework;
+
 
 namespace SoftUni
 {
     [TestFixture]
     public class Login : TestBase
     {
-        private HomePage homePage;
+        private string testName = "User Login";
+        private string testDescription = "The purpose of this test is to verify that user can sign in successfully";
+
+
+        [SetUp]
+        public void startReport()
+        { 
+            logger.StartTestReport(testName, testDescription);
+        }
+
+
+
+        [TearDown]
+        public void endReport()
+        {
+            logger.GetResults(testName);
+        }
 
 
 
         [Test]
         public void OpenHomePage()
         {
-            testName = "Test Name";
-            testDescription = "Test Description";
-            logger.CreateTest(testName, testDescription);
-
+            signInPage = new SignInPage(driver);
             homePage = new HomePage(driver);
+           
 
             homePage.OpenHomePage();
             assertions.CheckPageTitle(driver.Title, homePage.HomePageTitle);
 
-            homePage.Login();
+            homePage.ClickSignInPopupBtn();
 
-            logger.EndTest(testName, testDescription);
-
+            signInPage.EnterUserEmail();
         }
     }
 }

@@ -10,7 +10,9 @@ namespace SoftUni
         private readonly IConfigurationRoot config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
 
-        /* Returns configuration builder */
+        /*    
+         *    Returns configuration builder    
+         */
         public IConfigurationRoot GetConfig()
         {
             var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
@@ -19,7 +21,9 @@ namespace SoftUni
 
 
 
-        /* Returns project root path as string */
+        /*
+         *    Returns project root path as string
+         */
         public string GetProjectPath()
         {
             string workingDirectory = Environment.CurrentDirectory;
@@ -29,7 +33,9 @@ namespace SoftUni
 
 
 
-        /* Returns browser value from appsettings.json file */
+        /*
+         *    Returns browser value from appsettings.json file
+         */
         public string GetBrowser()
         {
             var browser = config["browser"];
@@ -38,11 +44,35 @@ namespace SoftUni
 
 
 
-        /* Returns URL value from appsettings.json file */
+        /*
+         *    Returns URL value from appsettings.json file
+         */
         public string GetBaseURL()
         {
             var baseURL = config["baseUrl"];
             return baseURL;
+        }
+
+
+
+        /*
+         *    Returns test user name value from appsettings.json file
+         */
+        public string GetUserName()
+        {
+            var userName = config["test_user"];
+            return userName;
+        }
+
+
+
+        /*
+         *    Returns test user password value from appsettings.json file
+         */
+        public string GetUserPassword()
+        {
+            var userPass = config["test_pass"];
+            return userPass;
         }
     }
 }

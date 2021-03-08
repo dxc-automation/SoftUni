@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/w5ZRJxNPsLZ+0TIa1jPa+d2V/QLt7dLw01YRqz1YKzgD+iuOY4wVDRIl9MXIiH3Kz9OCUJfswlY8rFU/mP7ZA==",
+  "dgSpecHash": "zQdi7PP6qVus12NoznMCkoqSA94316hy7L/70X+AnQAmfl0tw7dloAC2yF0Jm8QdYDCQmiHkpWc1VtOTzbIKzA==",
   "success": true,
   "projectFilePath": "E:\\SoftUni\\SoftUni\\SoftUni\\SoftUni.csproj",
   "expectedPackageFiles": [
@@ -91,6 +91,7 @@
     "C:\\Users\\PavelPopov\\.nuget\\packages\\nunit.consolerunner\\3.12.0\\nunit.consolerunner.3.12.0.nupkg.sha512",
     "C:\\Users\\PavelPopov\\.nuget\\packages\\nunit3testadapter\\3.17.0\\nunit3testadapter.3.17.0.nupkg.sha512",
     "C:\\Users\\PavelPopov\\.nuget\\packages\\razorengine.netcore\\2.2.6\\razorengine.netcore.2.2.6.nupkg.sha512",
+    "C:\\Users\\PavelPopov\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\PavelPopov\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\PavelPopov\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\PavelPopov\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

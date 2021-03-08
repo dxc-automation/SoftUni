@@ -1,92 +1,85 @@
 ﻿using AventStack.ExtentReports;
-using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
-using SoftUni;
+using NUnit.Framework.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SoftUni
 {
     public class ExtentLogger : TestBase
     {
-        public ExtentReports extent;
-        public ExtentTest test;
+
+        public static  ExtentReports       extent;
+        public static  ExtentTest          test;
+        private static ExtentHtmlReporter  htmlReporter;
+        private static string exception { get; }
 
 
 
-        public void CreateTest(string testName, string testDescription)
+        private ExtentHtmlReporter getHtmlReporter()
         {
-            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(utils.GetProjectPath() + "\\Report\\TestReport.html");
-            htmlReporter.LoadConfig(utils.GetProjectPath() + "\\Resources\\logger-config.xml");
-            extent = new ExtentReports();
-            extent.AttachReporter(htmlReporter);
-
-
-            test = extent.CreateTest("<b>" + testName + "</b>",
-                  "<pre>"
-                          + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
-                          + "<p align=justify>"
-                          + testDescription
-                          + "</p>"
-                          + "</pre>");
+            htmlReporter = new ExtentHtmlReporter(utils.GetProjectPath() + "\\Report\\TestReport.html");
+            htmlReporter.LoadConfig(utils.GetProjectPath() + "\\Resources\\extent-config.xml");
+            return htmlReporter;
         }
 
 
-        public void EndTest(string testName, string testDescription)
+        public ExtentReports GetExtent() 
+        {
+            if (extent != null) {
+                return extent;
+            }
+
+            extent = new ExtentReports();
+                extent.AttachReporter(getHtmlReporter());
+                extent.AttachReporter(htmlReporter);
+            return extent;
+        }
+
+
+        public void StartTestReport(string testName, string testDescription)
+        {
+            extent = GetExtent();
+            test   = extent.CreateTest(
+                "<b>" + testName + "</b>",
+                "<pre><center>"
+                        + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
+                        + "<p align=justify>"
+                        + testDescription
+                        + "</p>"
+                        + "</pre>");
+            extent.AnalysisStrategy = AnalysisStrategy.Test;
+        }
+
+
+  
+        public void GetResults(string testName)
         {
             var status = TestContext.CurrentContext.Result.Outcome.Status;
+            var stackTrace = "" + TestContext.CurrentContext.Result.StackTrace + "";
+            var errorMessage = TestContext.CurrentContext.Result.Message;
 
-            try
+            if (status == TestStatus.Failed)
             {
-                if (status == NUnit.Framework.Interfaces.TestStatus.Failed)
-                {
-                    string stacktrace = string.IsNullOrEmpty(TestContext.CurrentContext.Result.StackTrace) ? ""
-                    : string.Format("{0}", TestContext.CurrentContext.Result.StackTrace);
-                    string errorMessage = TestContext.CurrentContext.Result.Message;
-                    Console.WriteLine("\n ERROR MSG \n" + stacktrace);
-                    string exception = TestContext.CurrentContext.Result.Message;
-                    Console.WriteLine("\n ERROR  \n" + exception);
-                    test.Fail("<pre>"
-                            + "<br/>"
-                            + "<center><b>* * * * * * * *    " + testName + "    * * * * * * * *</b></center>"
-                            + "<br/>"
-                            + "<br/>" + testDescription
-                            + "<br/>"
-                            + "<b>Error Message</b>"
-                            + "<br/>"
-                            + exception
-                            + "<br/>"
-                            + "<b>Stack Trace</b>"
-                            + "<br/>"
-                            + stacktrace
-                            + "<br/>"
-                        //    + GetResponseBody()
-                            + "</pre>");
-                }
-                else
-                {
-                    test.Pass("<pre>"
-                               + "<br/>"
-                               + "<center><b>* * * * * * * *    " + testName + "    * * * * * * * *</b></center>"
-                               + "<br/>" + testDescription
-                               + "<br/>"
-                               + "</pre>");
-                }
+                test.Fail("<pre><b>[Test Failed]\n</b>" + testName + "\n<b>[Error Message]\n</b>" + errorMessage + "<b>\n[StackTrace]\n</b>" + stackTrace);
+                test.Fail("Exception Came!");
             }
-            catch (Exception e)
+            else if (status == TestStatus.Passed)
             {
-                test.Fail(e.Message);
+                test.Pass("Description: " + testName + " [" + status + "] No of Assertions Passed: " + TestContext.CurrentContext.AssertCount);
             }
-            extent.Flush();
+            else if (status == TestStatus.Skipped)
+            {
+                test.Skip("" + status);
+            }
+            EndReport();
         }
+    
 
-        //      public IWebDriver GetDriver()
-        //     {
-        //        return driver;
-        //   }
-
-
+        public void EndReport()
+        {
+            extent.Flush();           
+        }
     }
 }
+
