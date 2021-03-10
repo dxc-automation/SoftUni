@@ -1,40 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="eb180ee6-c48d-4e71-bf24-a1667f90cce1" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-08 16:33:09" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2021-03-08T16:33:09.7981096+02:00" queuing="2021-03-08T16:33:09.7981104+02:00" start="2021-03-08T16:32:50.7932970+02:00" finish="2021-03-08T16:33:15.9950815+02:00" />
-  <TestSettings name="default" id="696e8695-059b-4c90-afdb-2ac9e8eda355">
-    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-08_16_33_09" />
+<TestRun id="dae7e1f2-8ff3-43de-a57e-a27dc0616c7a" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-10 16:13:12" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-03-10T16:13:12.8300161+02:00" queuing="2021-03-10T16:13:12.8300169+02:00" start="2021-03-10T16:12:43.2771623+02:00" finish="2021-03-10T16:13:18.2657201+02:00" />
+  <TestSettings name="default" id="6bca7ab5-3053-43ff-8521-5dcbe2fb9280">
+    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-10_16_13_12" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="90887be8-0963-4343-affc-3118cbf956ed" testId="571e0838-c612-29d9-c9c4-65f86c0451ec" testName="UserLogin" computerName="DESKTOP-LJV2VHH" duration="00:00:08.5209890" startTime="2021-03-08T16:33:00.7076033+02:00" endTime="2021-03-08T16:33:09.2284130+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90887be8-0963-4343-affc-3118cbf956ed">
-      <Output>
-        <ErrorInfo>
-          <Message>  Expected string length 5 but was 21. Strings differ at index 0.&#xD;
-  Expected: "Gmail"&#xD;
-  But was:  "Вход – Google Профили"&#xD;
-  -----------^&#xD;
-</Message>
-          <StackTrace>   at SoftUni.Assertions.CheckPageTitle(String actualPageTitle, String expectedPageTitle) in E:\SoftUni\SoftUni\SoftUni\Assembly\Assertions.cs:line 15&#xD;
-   at SoftUni.Login.UserLogin() in E:\SoftUni\SoftUni\SoftUni\Tests\TestCase_01_Login.cs:line 39&#xD;
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
+    <UnitTestResult executionId="ee977afe-fdea-4ba5-8f99-63cdb711b0de" testId="571e0838-c612-29d9-c9c4-65f86c0451ec" testName="UserLogin" computerName="DESKTOP-LJV2VHH" duration="00:00:18.1781390" startTime="2021-03-10T16:12:53.2463804+02:00" endTime="2021-03-10T16:13:11.4244239+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee977afe-fdea-4ba5-8f99-63cdb711b0de" />
   </Results>
   <TestDefinitions>
     <UnitTest name="UserLogin" storage="e:\softuni\softuni\softuni\bin\debug\netcoreapp3.1\softuni.dll" id="571e0838-c612-29d9-c9c4-65f86c0451ec">
-      <Execution id="90887be8-0963-4343-affc-3118cbf956ed" />
+      <Execution id="ee977afe-fdea-4ba5-8f99-63cdb711b0de" />
       <TestMethod codeBase="E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll" adapterTypeName="executor://nunit3testexecutor/" className="SoftUni.Login" name="UserLogin" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="571e0838-c612-29d9-c9c4-65f86c0451ec" executionId="90887be8-0963-4343-affc-3118cbf956ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="571e0838-c612-29d9-c9c4-65f86c0451ec" executionId="ee977afe-fdea-4ba5-8f99-63cdb711b0de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
-  <ResultSummary outcome="Failed">
-    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>NUnit Adapter 3.17.0.0: Test execution started&#xD;
 Running all tests in E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll&#xD;

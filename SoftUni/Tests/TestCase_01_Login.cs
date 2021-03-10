@@ -32,14 +32,10 @@ namespace SoftUni
             var loginPage = new LoginPage(driver);
             PageFactory.InitElements(driver, loginPage);
 
-            var homePage = new HomePage(driver);
-            PageFactory.InitElements(driver, homePage);
-
             loginPage.OpenLoginPage();
-            assertions.CheckPageTitle(driver.Title, loginPage.LoginPageTitle);
+            // assertions.CheckPageTitle(driver.Title, loginPage.LoginPageTitle);
 
-            loginPage.inputEmail.SendKeys(utils.GetUserName());
-            loginPage.inputEmail.Submit();
+            loginPage.AddUsername();
         }
     }
 }

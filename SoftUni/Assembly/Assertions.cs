@@ -12,7 +12,7 @@ namespace SoftUni
         /* Check current web page title */
         public void CheckPageTitle(string actualPageTitle, string expectedPageTitle)
         {
-            Assert.AreEqual(expectedPageTitle, actualPageTitle);
+            Assert.AreEqual(expectedPageTitle, actualPageTitle, "");
         }
     }
 }

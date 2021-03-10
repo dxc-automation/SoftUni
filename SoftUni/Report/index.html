@@ -51,7 +51,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">3/8/2021 4:33:00 PM</span>
+                    <span class="badge badge-primary">3/10/2021 4:12:53 PM</span>
                 </a>
             </li>
         </ul>
@@ -106,7 +106,7 @@
 						<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																				<div class="dropdown-divider"></div>
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
 				</li>
@@ -114,25 +114,25 @@
         </div>
         <div class="test-list-wrapper scrollable">
             <ul class="test-list-item">
-					<li class="test-item" status="fail" author="" device="" tag="" test-id="1"> 
-						<div class="status-avatar fail-bg">
-							<i class="fa fa-times text-white"></i>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
 						</div>
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name"><b>User Login</b></p> 
-								<p class="duration text-sm">0h:0m:5s+233ms</p> 
-								<span class="datetime">16:33:00 PM</span>
+								<p class="duration text-sm">0h:0m:15s+386ms</p> 
+								<span class="datetime">16:12:53 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
 							<div class="detail-head">
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
-										<h5 class="test-status text-fail"><b>User Login</b></h5>
-										<span class='badge badge-success'>3/8/2021 4:33:00 PM</span>
-										<span class='badge badge-danger'>3/8/2021 4:33:05 PM</span>
-										<span class='badge badge-default'>0h:0m:5s+233ms</span>
+										<h5 class="test-status text-pass"><b>User Login</b></h5>
+										<span class='badge badge-success'>3/10/2021 4:12:53 PM</span>
+										<span class='badge badge-danger'>3/10/2021 4:13:08 PM</span>
+										<span class='badge badge-default'>0h:0m:15s+386ms</span>
 									</div>
 																		<div class="m-t-10 m-l-5">
 										<pre><center><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that user can sign in successfully</p></pre>
@@ -149,26 +149,10 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>16:33:05</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:13:08</td>
 				<td>
-<pre><b>[Test Failed]
-</b>User Login
-<b>[Error Message]
-</b>  Expected string length 5 but was 21. Strings differ at index 0.
-  Expected: "Gmail"
-  But was:  "Вход – Google Профили"
-  -----------^
-<b>
-[StackTrace]
-</b>   at SoftUni.Assertions.CheckPageTitle(String actualPageTitle, String expectedPageTitle) in E:\SoftUni\SoftUni\SoftUni\Assembly\Assertions.cs:line 15
-   at SoftUni.Login.UserLogin() in E:\SoftUni\SoftUni\SoftUni\Tests\TestCase_01_Login.cs:line 39									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>16:33:05</td>
-				<td>
-Exception Came!									</td>
+Description: User Login [Passed] No of Assertions Passed: 0									</td>
 			</tr>
 	</tbody>
 </table>
@@ -207,11 +191,11 @@ Exception Came!									</td>
 	                </div>
 	            </div>
 	            <div class="card-footer">
-	                <div><small data-tooltip='0%'>
-	                    <b>0</b> tests passed
+	                <div><small data-tooltip='100%'>
+	                    <b>1</b> tests passed
                     </small></div>
 	                <div>
-	                    <small data-tooltip='100%'><b>1</b> tests failed, 
+	                    <small data-tooltip='0%'><b>0</b> tests failed, 
 	                    <b data-tooltip='0%'>0</b> others
 	                    </small>
                     </div>
@@ -229,7 +213,7 @@ Exception Came!									</td>
 							<h2 class="font-size-28 font-weight-light">1</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-								<span>0%</span>
+								<span>100%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -245,7 +229,7 @@ Exception Came!									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Start</h6>
-							<h6 class="font-weight-light">3/8/2021 4:33:00 PM</h6>
+							<h6 class="font-weight-light">3/10/2021 4:12:53 PM</h6>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -261,7 +245,7 @@ Exception Came!									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Duration</h6>
-							<h6 class="font-weight-light">00:00:08.4764341</h6>
+							<h6 class="font-weight-light">00:00:18.1408983</h6>
 							<span class="text-semibold text-danger font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -277,7 +261,7 @@ Exception Came!									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<p class="">Duration</p>
-							<h6 class="font-weight-light">00:00:08.4771553</h6>
+							<h6 class="font-weight-light">00:00:18.1413396</h6>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -308,13 +292,13 @@ Exception Came!									</td>
 <script>
 	var statusGroup = {
     parentCount: 1,
-		passParent: 0,
-		failParent: 1,
+		passParent: 1,
+		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 1,
+		exceptionsParent: 0,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -338,7 +322,7 @@ Exception Came!									</td>
 	};
 </script>
 	<script>
-		var timeline = { "<b>User Login</b>":5.2332648 };
+		var timeline = { "<b>User Login</b>":15.3860185 };
 	</script>
 
                 </div>

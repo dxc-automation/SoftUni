@@ -31,8 +31,6 @@ namespace SoftUni
             LaunchBrowser();
         }
 
-
-
         /* Close browser application */
         [OneTimeTearDown]
         public void AfterSuite()
@@ -42,23 +40,27 @@ namespace SoftUni
         }
         #endregion
 
+
+
+
         public void LaunchBrowser()
         {
             var chromePath = utils.GetProjectPath() + "\\Resources\\chromedriver.exe";
+            var firefoxPath = utils.GetProjectPath() + "\\Resources\\";
             var browser = utils.GetBrowser();
 
             switch (browser)
-            {
+            { 
                 case "Chrome":
                     driver = new ChromeDriver(chromePath);
                     break;
 
                 case "Firefox":
-                    driver = new FirefoxDriver();
+                    driver = new FirefoxDriver(firefoxPath);
                     break;
 
                 default:
-                    driver = new FirefoxDriver();
+                    driver = new FirefoxDriver(firefoxPath);
                     break;
             }
             driver.Manage().Window.Maximize();

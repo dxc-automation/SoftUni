@@ -1,37 +1,37 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SoftUni
 {
     public class LoginPage
     {
         private IWebDriver driver;
-        Utils utils = new Utils();
+        private Utils utils = new Utils();
 
+        /*    Page Constructor    */
         public LoginPage(IWebDriver driver)
         {
             this.driver = driver;
         }
 
 
-        #region Page Elements
+        /*    Page Elements     */
         public string LoginPageTitle = "Gmail";
         public string LoginPageURL = "https://accounts.google.com/";
 
-        [FindsBy(How = How.XPath, Using = "//input[@id='identifierId']")]
-        [CacheLookup]
-        public IWebElement inputEmail { get; set; }
-        #endregion
+        public IWebElement EmailInputField => driver.FindElement(By.XPath("//input[@id='identifierId']"));
 
 
-        #region Page Actions
+        /*    Page Actions      */
         public void OpenLoginPage()
         {
             driver.Url = LoginPageURL;
         }
-        #endregion
+
+        public void AddUsername()
+        {
+            EmailInputField.SendKeys(utils.GetUserName());
+            EmailInputField.Submit();
+        }
     }
 }
