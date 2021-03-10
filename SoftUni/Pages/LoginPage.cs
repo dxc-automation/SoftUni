@@ -17,7 +17,7 @@ namespace SoftUni
 
         /*    Page Elements     */
         public string LoginPageTitle = "Gmail";
-        public string LoginPageURL = "https://accounts.google.com/";
+        public string LoginPageURL   = "https://accounts.google.com/";
 
         public IWebElement EmailInputField => driver.FindElement(By.XPath("//input[@id='identifierId']"));
 
