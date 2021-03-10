@@ -14,11 +14,10 @@ namespace SoftUni
         public Utils utils = new Utils();
 
         public static Assertions assertions = new Assertions();
-        public static ExtentLogger logger = new ExtentLogger();
+        public static ExtentLogger logger   = new ExtentLogger();
 
 
         #region Pages
-        public HomePage homePage;
         public LoginPage loginPage;
         #endregion
 
@@ -43,7 +42,7 @@ namespace SoftUni
 
 
 
-        public void LaunchBrowser()
+        public IWebDriver LaunchBrowser()
         {
             var chromePath = utils.GetProjectPath() + "\\Resources\\chromedriver.exe";
             var firefoxPath = utils.GetProjectPath() + "\\Resources\\";
@@ -64,6 +63,7 @@ namespace SoftUni
                     break;
             }
             driver.Manage().Window.Maximize();
+            return driver;
         }
     }
 }

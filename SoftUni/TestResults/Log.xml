@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="dae7e1f2-8ff3-43de-a57e-a27dc0616c7a" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-10 16:13:12" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2021-03-10T16:13:12.8300161+02:00" queuing="2021-03-10T16:13:12.8300169+02:00" start="2021-03-10T16:12:43.2771623+02:00" finish="2021-03-10T16:13:18.2657201+02:00" />
-  <TestSettings name="default" id="6bca7ab5-3053-43ff-8521-5dcbe2fb9280">
-    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-10_16_13_12" />
+<TestRun id="d66c029b-a427-465e-ab33-8c37eb47658a" name="PavelPopov@DESKTOP-LJV2VHH 2021-03-11 00:35:36" runUser="AzureAD\PavelPopov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-03-11T00:35:36.7133963+02:00" queuing="2021-03-11T00:35:36.7133975+02:00" start="2021-03-11T00:35:01.3216334+02:00" finish="2021-03-11T00:35:42.5606937+02:00" />
+  <TestSettings name="default" id="a7e7c4bd-8bf1-4287-83fb-c170cf39854a">
+    <Deployment runDeploymentRoot="PavelPopov_DESKTOP-LJV2VHH_2021-03-11_00_35_36" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="ee977afe-fdea-4ba5-8f99-63cdb711b0de" testId="571e0838-c612-29d9-c9c4-65f86c0451ec" testName="UserLogin" computerName="DESKTOP-LJV2VHH" duration="00:00:18.1781390" startTime="2021-03-10T16:12:53.2463804+02:00" endTime="2021-03-10T16:13:11.4244239+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee977afe-fdea-4ba5-8f99-63cdb711b0de" />
+    <UnitTestResult executionId="6de07103-d949-4bb8-9bcf-0c4bc7cc0ec9" testId="571e0838-c612-29d9-c9c4-65f86c0451ec" testName="UserLogin" computerName="DESKTOP-LJV2VHH" duration="00:00:21.1328710" startTime="2021-03-11T00:35:14.1036447+02:00" endTime="2021-03-11T00:35:35.2362562+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6de07103-d949-4bb8-9bcf-0c4bc7cc0ec9" />
   </Results>
   <TestDefinitions>
     <UnitTest name="UserLogin" storage="e:\softuni\softuni\softuni\bin\debug\netcoreapp3.1\softuni.dll" id="571e0838-c612-29d9-c9c4-65f86c0451ec">
-      <Execution id="ee977afe-fdea-4ba5-8f99-63cdb711b0de" />
+      <Execution id="6de07103-d949-4bb8-9bcf-0c4bc7cc0ec9" />
       <TestMethod codeBase="E:\SoftUni\SoftUni\SoftUni\bin\Debug\netcoreapp3.1\SoftUni.dll" adapterTypeName="executor://nunit3testexecutor/" className="SoftUni.Login" name="UserLogin" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="571e0838-c612-29d9-c9c4-65f86c0451ec" executionId="ee977afe-fdea-4ba5-8f99-63cdb711b0de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="571e0838-c612-29d9-c9c4-65f86c0451ec" executionId="6de07103-d949-4bb8-9bcf-0c4bc7cc0ec9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
